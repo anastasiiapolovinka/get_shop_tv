@@ -1,0 +1,65 @@
+.h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-700);
+  line-height: 110%;
+  letter-spacing: -3.2px;
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 120%;
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-700);
+  line-height: 32px;
+}
+
+.txt_1 {
+  font-size: var(--font-size-txt-1);
+  font-weight: var(--font-weight-400);
+  line-height: 32px;
+}
+
+.txt_2 {
+  font-size: var(--font-size-txt-2);
+  font-weight: var(--font-weight-400);
+  line-height: 22px;
+}
+
+.txt_3 {
+  font-size: var(--font-size-txt-3);
+  font-weight: var(--font-weight-400);
+  line-height: 20px;  
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    letter-spacing: -2.08px;
+  }
+
+  .h3 {
+    line-height: normal;
+  }
+
+  .txt_1 {
+    line-height: 20px;
+  }
+
+  .txt_2 {
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .h1 {
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+
+  .txt_1, .txt_2 {
+    line-height: normal;
+  }
+}
