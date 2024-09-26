@@ -1,3 +1,50 @@
+
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+html:focus-within {
+    scroll-behavior: smooth; 
+}
+
+img, picture, svg, video, canvas {
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+/* DESIGN TOKENS */
 :root {
   --color-white: #fff;
   --color-gray_01: #a4adac;
@@ -41,11 +88,8 @@
 }
 
 /* COMMON */
-
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -65,10 +109,6 @@ body {
   background-color: var(--color-gray_03);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -81,20 +121,18 @@ a:hover {
 
 a:active {
   color: var(--color-dark_orange);
+  text-decoration: underline;
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
 button {
-  cursor: pointer;
-  padding: 0;
+  border: none;
 }
 
 /* Utils */
-
 .h1 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-700);
@@ -114,13 +152,6 @@ button {
   line-height: 32px;
 }
 
-.btn_txt {
-  font-size: var(--font-size-btn);
-  font-weight: var(--font-weight-500);
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-
 .txt_1 {
   font-size: var(--font-size-txt-1);
   font-weight: var(--font-weight-400);
@@ -137,6 +168,11 @@ button {
   font-size: var(--font-size-txt-3);
   font-weight: var(--font-weight-400);
   line-height: 20px;  
+}
+
+.full_w {
+  width: 100%!important;
+  max-width: 100%!important;
 }
 
 @media (max-width: 768px) {
@@ -165,25 +201,5 @@ button {
 
   .txt_1, .txt_2 {
     line-height: normal;
-  }
-}
-
-/* UI-KIT */
-
-.container {
-  margin: auto;
-  width: 100%;
-  max-width: 1220px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 688px;
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    max-width: 288px;
   }
 }

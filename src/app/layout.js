@@ -1,5 +1,5 @@
 import { onest } from './fonts';
-import './styles/style.css';
+import './styles/globals.css';
 
 export const metadata = {
   title: 'GET_SHOP_TV',
