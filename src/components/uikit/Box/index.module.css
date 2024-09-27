@@ -1,4 +1,27 @@
 .box {
    display: flex;
-   flex: 1;
+}
+
+.column {
+   flex-direction: column;
+}
+
+.align_center {
+   align-items: center;
+}
+
+.align_start {
+   align-items: flex-start;
+}
+
+.align_end {
+   align-items: flex-end;
+}
+
+.justify_center {
+   justify-content: center;
+}
+
+.justify_between {
+   justify-content: space-between;
 }
