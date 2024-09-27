@@ -15,8 +15,8 @@ export const Box = ({
       styles.box,
       className,
       direction === "column" && styles.column,
-      align && `align_${align}`,
-      justify && `justify_${justify}`,
+      align && styles[`align_${align}`],
+      justify && styles[`justify_${justify}`],
     ])}
     {...props}
   >
