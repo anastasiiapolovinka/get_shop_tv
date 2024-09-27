@@ -2,16 +2,19 @@
   margin: auto;
   width: 100%;
   max-width: 1220px;
+  padding: 0 30px;
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 688px;
+    padding: 0 40px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 288px;
+    padding: 0 16px;
   }
 }
