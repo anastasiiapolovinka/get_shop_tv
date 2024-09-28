@@ -17,6 +17,13 @@
   line-height: 32px;
 }
 
+.btn {
+  font-size: var(--font-size-btn);
+  font-weight: var(--font-weight-500);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
 .txt_1 {
   font-size: var(--font-size-txt-1);
   font-weight: var(--font-weight-400);
@@ -32,7 +39,7 @@
 .txt_3 {
   font-size: var(--font-size-txt-3);
   font-weight: var(--font-weight-400);
-  line-height: 20px;  
+  line-height: 20px;
 }
 
 @media (max-width: 768px) {
@@ -59,7 +66,8 @@
     letter-spacing: 0;
   }
 
-  .txt_1, .txt_2 {
+  .txt_1,
+  .txt_2 {
     line-height: normal;
   }
 }
