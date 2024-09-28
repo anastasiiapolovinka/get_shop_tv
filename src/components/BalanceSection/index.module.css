@@ -1,0 +1,21 @@
+.section {
+  background-color: var(--color-gray_04);
+  padding: 110px 0 90px;
+}
+
+.wrapper {
+  gap: 80px;
+}
+
+.wrapper > h2 {
+  text-align: center;
+}
+
+.info_items {
+  align-items: center;
+}
+
+.info_item {
+  padding: 32px;
+  gap: 16px;
+}
