@@ -1,0 +1,15 @@
+.btn {
+  max-width: 210px;
+  background-color: var(--color-black);
+}
+
+.btn:hover {
+  background-color: var(--color-gray_01);
+  color: var(--color-white);
+}
+
+@media (max-width: 320px) {
+  .btn {
+    max-width: 100%;
+  }
+}
