@@ -1,4 +1,9 @@
-import { BalanceSection, HeroSection, PartnersSection } from "@/components";
+import {
+  BalanceSection,
+  HeroSection,
+  ReportsSection,
+  PartnersSection,
+} from "@/components";
 import { Header } from "@/components/uikit";
 
 export default function Home() {
@@ -8,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <BalanceSection />
       <PartnersSection />
+      <ReportsSection />
     </>
   );
 }

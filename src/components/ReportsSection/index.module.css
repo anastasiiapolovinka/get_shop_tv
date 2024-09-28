@@ -1,0 +1,30 @@
+.section {
+  padding: 74px 0 54px;
+  background: url(../../app/images/report_bg.png) no-repeat right;
+  background-color: var(--color-gray_04);
+}
+
+.wrapper {
+  padding: 40px 0 40px 30px;
+  gap: 80px;
+}
+
+.report_info {
+  max-width: 498px;
+  gap: 32px;
+}
+
+.report_info_items {
+  gap: 20px;
+}
+
+.item {
+  gap: 16px;
+}
+
+.item > span {
+  background: url(../../app/images/bullet.png) no-repeat;
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+}
