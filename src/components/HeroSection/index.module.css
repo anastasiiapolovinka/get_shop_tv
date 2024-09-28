@@ -1,0 +1,88 @@
+.section {
+  background: url(../../app/images/hero_bg.png) no-repeat top 67px center;
+  padding: 32px 0 70px;
+}
+
+.wrapper {
+  padding-top: 172px;
+}
+
+.content {
+  gap: 180px;
+}
+
+.call_to_action {
+  gap: 80px;
+}
+
+.headings {
+  gap: 32px;
+}
+
+.hint {
+  font-weight: var(--font-weight-400); /* mistake in figma design */
+}
+
+.btn {
+  max-width: 210px;
+  background-color: var(--color-orange);
+}
+
+.btn:hover {
+  background-color: var(--color-dark_orange);
+}
+
+.btn:active {
+  background-color: var(--color-gray_02);
+  color: var(--color-gray_01);
+}
+
+.footer {
+  gap: 140px;
+  padding-bottom: 24px;
+}
+
+.btn_toggle {
+  width: 276px;
+  padding: 10px 37px;
+  color: var(--color-black);
+  background-color: var(--color-gray_04);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-700);
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+.btn_toggle:hover {
+  background-color: var(--color-gray_04);
+  color: var(--color-gray_01);
+}
+
+.btn_toggle.active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.toggle_info {
+  display: none;
+}
+
+.toggle_info.active {
+  display: block;
+}
+
+.gain_sources {
+  gap: 32px;
+}
+
+.toggle_btns {
+  padding: 4px;
+  background-color: var(--color-gray_04);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    max-width: 100%;
+  }
+}
