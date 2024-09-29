@@ -2,6 +2,7 @@ import {
   BalanceSection,
   HeroSection,
   ReportsSection,
+  Footer,
   PartnersSection,
 } from "@/components";
 import { Header } from "@/components/uikit";
@@ -14,6 +15,7 @@ export default function Home() {
       <BalanceSection />
       <PartnersSection />
       <ReportsSection />
+      <Footer />
     </>
   );
 }
