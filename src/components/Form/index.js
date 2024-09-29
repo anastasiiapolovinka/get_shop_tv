@@ -7,7 +7,6 @@ export const Form = () => {
     <Box Component="form" id="form" className={styles.wrapper}>
       <textarea
         name="question"
-        maxlength="50"
         placeholder="Напишите свой вопрос"
         className={styles.question}
       ></textarea>
@@ -33,7 +32,7 @@ export const Form = () => {
             <AText
               Component="label"
               variant="txt_3"
-              for="agreement"
+              htmlFor="agreement"
               className={styles.label}
             >
               Я ознакомлен(а) с{" "}
