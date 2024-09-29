@@ -11,3 +11,8 @@
   line-height: 24px;
   letter-spacing: 0.5px;
 }
+
+.btn.full_w {
+  width: 100%;
+  max-width: 100%;
+}

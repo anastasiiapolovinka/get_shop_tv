@@ -6,10 +6,15 @@ export const Button = ({
   type = "button",
   className,
   handleClick = () => {},
+  isFullWidth,
   children,
   ...props
 }) => {
-  const btnClassName = clsx([styles.btn, className]);
+  const btnClassName = clsx([
+    styles.btn,
+    isFullWidth && styles.full_w,
+    className,
+  ]);
   return (
     <button
       onClick={handleClick}
