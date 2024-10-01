@@ -9,7 +9,7 @@ export const PartnersSection = () => {
   return (
     <Box className={styles.section}>
       <Container>
-        <Box align="center" justify="between">
+        <Box align="center" justify="between" className={styles.wrapper}>
           <AText Component="h3" variant="h3">
             Наши партнёры по монетизации
           </AText>
