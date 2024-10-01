@@ -1,3 +1,4 @@
+"use client"
 import {
   BalanceSection,
   HeroSection,
@@ -6,15 +7,17 @@ import {
   PartnersSection,
 } from "@/components";
 import { Header } from "@/components/uikit";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export default function Home() {
+  const { activeSection, section1Ref, section2Ref } = useActiveSection();
   return (
     <>
-      <Header />
+      <Header activeSection={activeSection} />
       <HeroSection />
-      <BalanceSection />
+      <BalanceSection ref={section1Ref} />
       <PartnersSection />
-      <ReportsSection />
+      <ReportsSection ref={section2Ref} />
       <Footer />
     </>
   );
