@@ -56,6 +56,10 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style: none;
+}
+
 /* DESIGN TOKENS */
 :root {
   --color-white: #fff;
@@ -91,6 +95,7 @@ html {
 
 @media (max-width: 320px) {
   :root {
+    --font-size-txt-3: 12px;
     --font-size-txt-2: 14px;
     --font-size-txt-1: 16px;
     --font-size-h3: 20px;
