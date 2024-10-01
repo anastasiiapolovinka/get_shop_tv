@@ -16,8 +16,8 @@ export const HeroSection = () => {
                 </AText>
                 <AText className={styles.hint} variant="h3" Component="h3">
                   Найдите идеальный баланс выручки
-                  <br /> и удовлетворённости пользователей c платформой
-                  <br /> рекламной монетизации
+                  и удовлетворённости пользователей c платформой
+                  рекламной монетизации
                 </AText>
               </Box>
               <Button className={styles.btn}>Заказать звонок</Button>

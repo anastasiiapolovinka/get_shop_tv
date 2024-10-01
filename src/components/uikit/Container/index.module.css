@@ -7,14 +7,12 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: 688px;
     padding: 0 40px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 288px;
     padding: 0 16px;
   }
 }

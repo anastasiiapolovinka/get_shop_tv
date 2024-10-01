@@ -20,6 +20,7 @@
 }
 
 .hint {
+  max-width: 626px;
   font-weight: var(--font-weight-400); /* mistake in figma design */
 }
 
@@ -82,7 +83,96 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    background: url(../../app/images/hero_bg_tablet.png) no-repeat top center;
+    padding: 0 0 36px;
+  }
+
+  .content {
+    gap: 120px;
+  }
+
+  .call_to_action {
+    gap: 60px;
+  }
+
+  .hint {
+    max-width: 350px;
+    font-size: var(--font-size-txt-1);
+    line-height: 20px;
+  }
+
   .btn {
     max-width: 100%;
+  }
+
+  .footer {
+    gap: 79px;
+    padding: 0;
+  }
+
+  .footer > h2 {
+    max-width: 275px;
+  }
+
+  .gain_sources {
+    gap: 16px;
+  }
+
+  .toggle_btns {
+    padding: 2px;
+  }
+
+  .btn_toggle {
+    width: 165px;
+    padding: 6px 22px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding-top: 112px;
+  }
+
+  .headings > h1 {
+    line-height: 110%;
+    letter-spacing: -1.44px;
+  }
+
+  .hint {
+    line-height: normal;
+  }
+
+  .call_to_action {
+    gap: 112px;
+  }
+
+  .content {
+    gap: 80px;
+  }
+
+  .footer {
+    gap: 22px;
+    flex-direction: column;
+  }
+
+  .footer > h2 {
+    max-width: 100%;
+  }
+
+  .btn_toggle {
+    width: 142px;
+    padding: 5px 20px;
+    font-size: var(--font-size-txt-3);
+    line-height: normal;
+  }
+
+  .toggle_btns {
+    padding: 4px 2px;
+  }
+
+  .gain_sources {
+    gap: 22px;
   }
 }
