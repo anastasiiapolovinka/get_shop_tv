@@ -1,14 +1,15 @@
 import Image from "next/image";
 import balance from "./../../app/images/balance.png";
+import balance_tablet from "./../../app/images/balance_tablet.png";
+import balance_mob from "./../../app/images/balance_mob.png";
 import { AText, Box, Container } from "../uikit";
-
 import styles from "./index.module.css";
+import { forwardRef } from "react";
 
-export const BalanceSection = () => {
-  return (
-    <Box id="balance_section" className={styles.section}>
+export const BalanceSection = forwardRef(({}, ref) => (
+    <Box ref={ref} id="balance_section" className={styles.section}>
       <Container>
-        <Box className={styles.wrapper} direction="column">
+        <Box className={styles.wrapper} direction="column" align="center">
           <AText Component="h2" variant="h2">
             Баланс между выручкой и удовлетворённостью пользователей
           </AText>
@@ -16,10 +17,9 @@ export const BalanceSection = () => {
             <Box className={styles.info_item} direction="column">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                className={styles.bullet}
               >
                 <circle cx="16" cy="16" r="12" fill="#FF5900" />
                 <path
@@ -34,14 +34,15 @@ export const BalanceSection = () => {
                 Чтобы не ронять NPS и не увеличивать отток пользователей
               </AText>
             </Box>
-            <Image src={balance} alt="ogange_square" />
+            <Image className={styles.balance} src={balance} alt="ogange_square" />
+            <Image className={styles.balance_tablet} src={balance_tablet} alt="ogange_square_mob" />
+            <Image className={styles.balance_mob} src={balance_mob} alt="ogange_square_mob" />
             <Box className={styles.info_item} direction="column">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                className={styles.bullet}
               >
                 <circle cx="16" cy="16" r="12" fill="#FF5900" />
                 <path
@@ -60,5 +61,6 @@ export const BalanceSection = () => {
         </Box>
       </Container>
     </Box>
-  );
-};
+  ));
+
+BalanceSection.displayName = 'BalanceSection';

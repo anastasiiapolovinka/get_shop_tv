@@ -1,7 +1,8 @@
 import clsx from "clsx";
 import styles from "./index.module.css";
+import { forwardRef } from "react";
 
-export const Box = ({
+export const Box = forwardRef(({
   children,
   className,
   Component = "div",
@@ -9,8 +10,9 @@ export const Box = ({
   align,
   justify,
   ...props
-}) => (
+}, ref) => (
   <Component
+    ref={ref}
     className={clsx([
       styles.box,
       className,
@@ -22,4 +24,6 @@ export const Box = ({
   >
     {children}
   </Component>
-);
+));
+
+Box.displayName = 'Box';
